@@ -58,7 +58,7 @@
     <article id="ko" lang="ko">
       <h2>WOD COACH 개인정보처리방침</h2>
       <p><strong>LEEJUNWON</strong>(이하 “개발자”)은 <strong>WOD COACH</strong>(이하 “앱”) 이용자의 개인정보를 중요하게 생각합니다. 본 방침은 앱의 이용 과정에서 처리되는 정보와 이용자의 권리를 설명합니다.</p>
-      <div class="summary"><p>WOD COACH는 운동 프로그램 구성, 운동·식단 기록과 개인화된 분석을 지원하는 앱입니다. 사용자가 입력하거나 선택한 운동·식단 정보는 기본적으로 기기의 앱 저장 공간에서 처리하도록 설계되었습니다.</p></div>
+      <div class="summary"><p>WOD COACH는 운동 프로그램 구성, 운동·식단 기록과 개인화된 분석을 지원하는 앱입니다. 운동·식단 기록은 기본적으로 기기 내 앱 저장 공간에서 관리됩니다. 단, 외부 AI 분석 기능을 이용할 때는 분석 요청과 관련된 일부 정보가 외부 AI API로 전송될 수 있습니다.</p></div>
 
       <h3>1. 처리하는 정보 및 이용 목적</h3>
       <p>이용자가 관련 기능을 사용하는 경우, 다음 정보가 앱에서 처리될 수 있습니다.</p>
@@ -70,22 +70,23 @@
       </ul>
       <p>이 정보는 운동 프로그램 제공, 진행 상황의 기록과 분석, 식단 기록, 사용자가 요청한 기능 수행 및 설정 유지를 위해 이용됩니다. 이 앱은 의료 진단을 제공하는 서비스가 아닙니다.</p>
 
-      <h3>2. 저장 위치 및 외부 전송</h3>
-      <p>기본적인 운동 기록과 사용자가 선택한 이미지·식단 기록은 기기 내 앱 저장 공간에 보관됩니다. 해당 기록을 개발자가 운영하는 별도 서버로 자동 업로드하도록 설계하지 않았습니다. 다만 Google Play와 같은 플랫폼 기능을 이용하는 경우 플랫폼 제공자가 자체 서비스 운영에 필요한 정보를 처리할 수 있습니다.</p>
-      <p>향후 서버 동기화, 계정 또는 외부 AI 서비스가 도입되어 데이터 처리 방식이 달라지는 경우, 관련 정보와 방침을 그 기능의 적용에 맞춰 수정합니다.</p>
+      <h3>2. 기기 내 저장 및 외부 AI 분석</h3>
+      <p>운동·식단 기록과 사용자가 선택한 이미지는 기본적으로 기기 내 앱 저장 공간에서 관리됩니다. 다만 <strong>WOD COACH에는 외부 AI API를 이용하는 분석 기능이 있습니다.</strong> AI 분석 과정에서 분석 요청 내용과 해당 분석에 필요한 입력 정보가 외부 AI 서비스로 전송되어 처리될 수 있습니다.</p>
+      <p>외부 API로 전달되는 정보의 범위는 실제 사용하는 분석 기능에 따라 달라질 수 있으며, 운동 기록·식단 기록·사진 등 개별 항목의 전송 여부는 앱 구현에 따라 확인이 필요합니다. 외부 AI 제공업체 및 실제 전송 항목, 처리·보유 조건은 배포 중인 앱의 연동 설정을 기준으로 확인하여 안내해야 합니다.</p>
+      <p>Google Play를 통한 앱 설치·결제 등 플랫폼 서비스 이용 시에도 해당 플랫폼 제공자가 서비스 운영에 필요한 정보를 별도로 처리할 수 있습니다.</p>
 
       <h3>3. 기기 접근 권한</h3>
       <p>사진 선택·촬영과 알림 등 앱의 해당 기능에 필요할 때만 관련 기기 권한을 요청할 수 있습니다. 권한 허용 여부는 Android 설정에서 관리할 수 있으며, 권한을 거부하면 해당 기능의 일부가 제한될 수 있습니다.</p>
 
-      <h3>4. 제3자 서비스</h3>
-      <p>앱의 설치·업데이트 및 Google Play 구독·결제 기능(제공되는 경우)에는 Google의 서비스가 사용될 수 있습니다. 결제 수단 정보는 Google Play 결제 환경에서 처리되며, 개발자가 카드번호를 직접 수집하도록 설계되어 있지 않습니다. Google의 정보 처리에 대해서는 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a>을 참고하시기 바랍니다.</p>
+      <h3>4. 외부 서비스 제공자</h3>
+      <p>AI 분석 기능 제공을 위해 외부 AI API 사업자가 분석 요청 및 필요한 정보를 처리할 수 있습니다. 앱의 설치·업데이트 및 Google Play 구독·결제 기능(제공되는 경우)에는 Google의 서비스도 사용될 수 있습니다. 결제 수단 정보는 Google Play 결제 환경에서 처리되며, 개발자가 카드번호를 직접 수집하도록 설계되어 있지 않습니다. Google의 정보 처리에 대해서는 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a>을 참고하시기 바랍니다.</p>
 
       <h3>5. 안전성 확보</h3>
       <p>기기에 저장되는 정보에는 Android의 앱별 저장 공간과 운영체제 접근 제어를 사용합니다. 이용자는 운영체제의 기기 잠금 및 보안 업데이트를 통해 추가적인 보호 조치를 취할 수 있습니다. 외부 서비스가 사용되는 경우 해당 서비스의 보안 정책도 적용됩니다.</p>
 
       <h3>6. 보관 기간 및 삭제 방법</h3>
       <p>기기에 저장된 운동·식단 기록 및 설정은 이용자가 직접 삭제하거나 기기의 앱 데이터를 지울 때까지 보관될 수 있습니다. Android의 <strong>설정 → 앱 → WOD COACH → 저장공간 → 데이터 삭제</strong>를 통해 기기 내 앱 데이터를 삭제할 수 있습니다. 앱 삭제 시에도 일반적으로 앱의 기기 내 데이터가 삭제되지만, 운영체제 백업·복원 설정이나 외부 플랫폼의 기록은 별도로 관리될 수 있습니다.</p>
-      <p>개인정보 처리·삭제 관련 문의는 아래 이메일로 요청할 수 있습니다. Google Play 결제 기록 등 플랫폼이 관리하는 정보는 해당 플랫폼의 관리 절차가 적용됩니다.</p>
+      <p>외부 AI API로 전송된 정보의 보유·삭제에는 연동 서비스의 실제 처리 설정과 정책이 적용될 수 있습니다. 해당 정보의 처리·삭제에 관한 문의는 개발자에게 요청할 수 있습니다. Google Play 결제 기록 등 플랫폼이 관리하는 정보는 해당 플랫폼의 관리 절차가 적용됩니다.</p>
 
       <h3>7. 이용자의 선택과 권리</h3>
       <p>이용자는 앱에서 기록과 설정을 관리하고, 기기 권한을 변경하거나 앱 데이터를 삭제할 수 있습니다. 개인정보와 관련한 문의 또는 삭제 요청이 있으면 개발자에게 연락할 수 있습니다.</p>
@@ -107,16 +108,18 @@
         <h3>1. Information and purposes</h3>
         <p>Depending on the features a user chooses, the App may process training goals, preferences, available equipment and time, workout plans and performance records (including weights, repetitions, duration and running history), dietary entries, user-selected meal or verification images, notification settings, and related preferences. These are used to provide and personalize workouts, store progress, analyze activity, and operate user-requested features. The App is not a medical diagnostic service.</p>
         <p>Platform providers such as Google Play may separately process device, installation, security, or transaction information when their services are used.</p>
-        <h3>2. Storage and transmission</h3>
-        <p>Workout records, dietary entries, and selected images are designed to be stored locally in the App's storage on the device. They are not designed to be automatically uploaded to a separate server operated by the Developer. Google Play and other platform services may process information required for their respective functions. If future versions introduce account synchronization, server-based services, or external AI processing, this policy will be updated to reflect those practices.</p>
+        <h3>2. Local storage and external AI analysis</h3>
+        <p>Workout and dietary records and user-selected images are generally managed in local App storage. <strong>WOD COACH also uses an external AI API for analysis.</strong> When AI analysis is performed, the analysis request and relevant input information may be transmitted to and processed by an external AI service.</p>
+        <p>The specific items transmitted depend on how each analysis feature is implemented. Whether individual workout entries, food records, or photos are transmitted must be verified against the released App. The external AI provider, precise data categories, processing settings, and retention terms must be confirmed against the active integration.</p>
+        <p>Platform providers including Google Play may separately process information required for their services, such as app installation or payments.</p>
         <h3>3. Device permissions</h3>
         <p>For relevant functions, the App may request permissions to select or capture images or deliver notifications. Permissions can be managed through Android settings. Denying permission may limit the related feature.</p>
-        <h3>4. Third-party services</h3>
-        <p>Google services may be used for app distribution, updates, and subscriptions or payments where available. Payment credentials are handled through Google Play rather than collected directly by the Developer. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+        <h3>4. External service providers</h3>
+        <p>An external AI API provider may process analysis requests and the data needed to deliver AI analysis features. Google services may also be used for app distribution, updates, and subscriptions or payments where available. Payment credentials are handled through Google Play rather than collected directly by the Developer. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
         <h3>5. Security</h3>
         <p>Local information uses Android's app-specific storage and operating-system access controls. Device security settings and the security practices of any third-party platform services also apply.</p>
         <h3>6. Retention and deletion</h3>
-        <p>Locally stored records and preferences may remain until deleted by the user or removed by clearing the App's data. On Android, go to <strong>Settings → Apps → WOD COACH → Storage → Clear data</strong> to erase local App data. Removing the App generally removes its local data; platform backups and third-party records may be managed separately. For privacy or deletion inquiries, contact the Developer by email below.</p>
+        <p>Locally stored records and preferences may remain until deleted by the user or removed by clearing the App's data. On Android, go to <strong>Settings → Apps → WOD COACH → Storage → Clear data</strong> to erase local App data. Removing the App generally removes its local data; platform backups and third-party records may be managed separately. Data sent to an external AI API may be subject to the service's actual retention and deletion settings. Contact the Developer below with privacy or deletion requests.</p>
         <h3>7. Your choices</h3>
         <p>Users can manage records and settings, change device permissions, and clear the App's data. Users may contact the Developer with privacy inquiries or data-deletion requests.</p>
         <h3>8. Children</h3>
