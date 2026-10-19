@@ -73,7 +73,7 @@
       <h3>2. 기기 내 저장 및 선택형 GPT 분석</h3>
       <p>운동·식단 기록과 사용자가 선택한 이미지는 기본적으로 기기 내 앱 저장 공간에서 관리됩니다. <strong>WOD COACH는 사용자가 직접 활성화할 수 있는 OpenAI GPT API 기반의 운동 기록 수치 분석 기능을 제공합니다.</strong></p>
       <p><strong>AI 분석 ON:</strong> 분석을 요청하면 운동 기록에서 분석에 필요한 수치와 관련 입력 정보가 OpenAI API로 전송되어 처리될 수 있습니다. 대상은 운동 종목, 횟수, 세트, 중량, 운동 시간 및 기록의 요약 통계 등 분석 목적에 부합하는 운동 데이터입니다. 여기에 열거된 항목은 가능한 데이터 범위를 설명하며, 실제 전송 필드는 사용 중인 앱 버전의 구현에 따라 달라집니다.</p>
-      <p><strong>AI 분석 OFF:</strong> GPT 운동 기록 분석을 위한 신규 API 요청과 해당 기능을 위한 운동 기록 전송을 진행하지 않습니다. AI 분석 기능을 끄더라도 기기에서 제공하는 기본 운동 기록·조회 기능은 사용할 수 있습니다. 이전에 이미 OpenAI에 전달된 요청은 기능을 껐다는 이유만으로 자동 삭제되지 않습니다.</p>
+      <p><strong>AI 분석 OFF:</strong> GPT 운동 기록 분석을 위한 신규 API 요청과 해당 기능을 위한 운동 기록 전송을 진행하지 않습니다. AI 분석 기능을 끄더라도 운동 기록 저장·조회 및 앱 자체의 수치 계산과 통계 기능은 그대로 사용할 수 있습니다. 이전에 이미 OpenAI에 전달된 요청은 기능을 껐다는 이유만으로 자동 삭제되지 않습니다.</p>
       <p>사용자는 앱의 AI 분석 기능 설정에서 이 기능을 언제든 켜거나 끌 수 있습니다. 식단 사진 등 다른 기능의 데이터가 해당 API에 전송되는지는 별도의 실제 구현 확인이 필요하며, 본 항목은 <strong>운동 기록의 GPT 수치 분석 기능</strong>을 설명합니다.</p>
       <p>Google Play를 통한 앱 설치·결제 등 플랫폼 서비스 이용 시에도 해당 플랫폼 제공자가 서비스 운영에 필요한 정보를 별도로 처리할 수 있습니다.</p>
 
@@ -113,7 +113,7 @@
         <p>Platform providers such as Google Play may separately process device, installation, security, or transaction information when their services are used.</p>
         <h3>2. Local storage and external AI analysis</h3>
         <p>Workout and dietary records and user-selected images are generally managed in local App storage. <strong>WOD COACH offers optional GPT-powered numerical workout analysis using the OpenAI API.</strong> The user can enable or disable this feature. When enabled and analysis is requested, data necessary for the analysis may be sent to OpenAI.</p>
-        <p>Potential input categories for GPT workout analysis include the type of exercise, sets, repetitions, weights, workout duration, performance results and derived summaries. The exact fields sent depend on the released App's implementation. <strong>When GPT workout analysis is OFF, the App does not initiate new GPT analysis requests or transfer workout records for that feature.</strong> Turning it off does not retroactively remove previously submitted data. This section describes workout analysis only; other features, including any image-related processing, must be evaluated separately against the released implementation.</p>
+        <p>Potential input categories for GPT workout analysis include the type of exercise, sets, repetitions, weights, workout duration, performance results and derived summaries. The exact fields sent depend on the released App's implementation. <strong>When GPT workout analysis is OFF, the App does not initiate new GPT analysis requests or transfer workout records for that feature.</strong> Turning it off does not affect local workout recording, viewing or the App's own numerical calculations and statistics. Turning it off does not retroactively remove previously submitted data. This section describes workout analysis only; other features, including any image-related processing, must be evaluated separately against the released implementation.</p>
         <p>Platform providers including Google Play may separately process information required for their services, such as app installation or payments.</p>
         <h3>3. Device permissions</h3>
         <p>For relevant functions, the App may request permissions to select or capture images or deliver notifications. Permissions can be managed through Android settings. Denying permission may limit the related feature.</p>
