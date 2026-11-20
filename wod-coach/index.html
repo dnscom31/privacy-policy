@@ -45,9 +45,9 @@
       <h1>개인정보처리방침<br>Privacy Policy</h1>
       <p class="subtitle">운동 기록과 개인 데이터의 처리 방법을 안내합니다.</p>
       <div class="meta">
-        <span>앱 / App: <strong>WOD COACH</strong></span>
+        <span>앱 / App: <strong>WOD COACH</strong> (Android · iOS)</span>
         <span>개발자 / Developer: <strong>LEEJUNWON</strong></span>
-        <span>시행일 / Effective: <strong>2026-10-19</strong></span>
+        <span>시행일 / Effective: <strong>2026-11-20</strong></span>
       </div>
     </div>
   </header>
@@ -57,82 +57,83 @@
   <main>
     <article id="ko" lang="ko">
       <h2>WOD COACH 개인정보처리방침</h2>
-      <p><strong>LEEJUNWON</strong>(이하 “개발자”)은 <strong>WOD COACH</strong>(이하 “앱”) 이용자의 개인정보를 중요하게 생각합니다. 본 방침은 앱의 이용 과정에서 처리되는 정보와 이용자의 권리를 설명합니다.</p>
-      <div class="summary"><p>WOD COACH는 운동 프로그램 구성, 운동·식단 기록과 개인화된 분석을 지원하는 앱입니다. 운동·식단 기록은 기본적으로 기기 내 앱 저장 공간에서 관리됩니다. 외부 GPT 운동 분석은 사용자가 직접 켜거나 끌 수 있는 선택 기능입니다. 기능을 켜고 수치 분석을 이용할 때만 분석 요청에 필요한 운동 기록 정보가 OpenAI API로 전송될 수 있습니다.</p></div>
+      <p><strong>LEEJUNWON</strong>(이하 “개발자”)은 <strong>WOD COACH</strong>(이하 “앱”, Android·iOS) 이용자의 개인정보를 중요하게 생각합니다. 본 방침은 앱 이용 과정에서 처리되는 정보와 이용자의 권리를 설명합니다.</p>
+      <div class="summary"><p>운동 기록·프로필·사진은 <strong>기기 안에만</strong> 저장됩니다. 개발자 서버에 저장되는 것은 이용자가 <strong>친구 대결</strong>을 시작했을 때의 닉네임, 무작위 ID, 푸시 토큰, 친구 관계, 대결 운동과 결과뿐입니다. 이메일·전화번호·위치·건강 정보는 서버로 보내지 않습니다. 외부 AI(OpenAI 등)로 데이터를 보내는 기능은 2026-11-13에 없앴습니다.</p></div>
 
-      <h3>1. 처리하는 정보 및 이용 목적</h3>
-      <p>이용자가 관련 기능을 사용하는 경우, 다음 정보가 앱에서 처리될 수 있습니다.</p>
+      <h3>1. 기기 안에만 저장하는 정보</h3>
       <ul>
-        <li><strong>운동 정보:</strong> 운동 목표·선호 설정, 가능한 운동 시간 및 장비, 운동 종류, 세트·반복·중량, 운동 시간, 달리기 기록, 수행 결과 및 개인화 추천에 필요한 기록.</li>
-        <li><strong>식단 및 이미지:</strong> 사용자가 입력한 식사 기록과 선택 또는 촬영한 음식 사진, 기록 인증을 위해 직접 선택한 이미지(해당 기능을 사용하는 경우).</li>
-        <li><strong>앱 설정:</strong> 알림·개인화 설정 및 기기에서 앱 이용에 필요한 저장 정보.</li>
-        <li><strong>플랫폼 처리 정보:</strong> 앱 설치·업데이트, 결제 및 보안 등 Google Play가 제공하는 기능에서 플랫폼이 처리하는 기기 또는 거래 관련 정보(해당 서비스를 사용하는 경우).</li>
+        <li><strong>운동 정보:</strong> 생성한 운동, 운동 기록(점수·시간·중량·체감 난도·심박 등), 레벨 테스트 결과, 트레이닝 계획.</li>
+        <li><strong>프로필·설정:</strong> 성별 기준, 체중(소모 칼로리 추정에만 사용), 장비·목표·알림 설정.</li>
+        <li><strong>사진:</strong> 운동표 사진 분석은 기기 안에서 처리합니다(Android: Google ML Kit, iOS: Apple Vision). 사진을 서버로 보내지 않습니다. 앱 카메라로 찍은 오운완 사진은 기기 앨범의 “WOD Coach” 폴더에 저장됩니다.</li>
+        <li><strong>스마트워치:</strong> Wear OS 시계와의 운동 동기화는 기기 사이에서만 이루어집니다.</li>
       </ul>
-      <p>이 정보는 운동 프로그램 제공, 진행 상황의 기록과 분석, 식단 기록, 사용자가 요청한 기능 수행 및 설정 유지를 위해 이용됩니다. 이 앱은 의료 진단을 제공하는 서비스가 아닙니다.</p>
 
-      <h3>2. 기기 내 저장 및 선택형 GPT 분석</h3>
-      <p>운동·식단 기록과 사용자가 선택한 이미지는 기본적으로 기기 내 앱 저장 공간에서 관리됩니다. <strong>WOD COACH는 사용자가 직접 활성화할 수 있는 OpenAI GPT API 기반의 운동 기록 수치 분석 기능을 제공합니다.</strong></p>
-      <p><strong>AI 분석 ON:</strong> 분석을 요청하면 운동 기록에서 분석에 필요한 수치와 관련 입력 정보가 OpenAI API로 전송되어 처리될 수 있습니다. 대상은 운동 종목, 횟수, 세트, 중량, 운동 시간 및 기록의 요약 통계 등 분석 목적에 부합하는 운동 데이터입니다. 여기에 열거된 항목은 가능한 데이터 범위를 설명하며, 실제 전송 필드는 사용 중인 앱 버전의 구현에 따라 달라집니다.</p>
-      <p><strong>AI 분석 OFF:</strong> GPT 운동 기록 분석을 위한 신규 API 요청과 해당 기능을 위한 운동 기록 전송을 진행하지 않습니다. AI 분석 기능을 끄더라도 운동 기록 저장·조회 및 앱 자체의 수치 계산과 통계 기능은 그대로 사용할 수 있습니다. 이전에 이미 OpenAI에 전달된 요청은 기능을 껐다는 이유만으로 자동 삭제되지 않습니다.</p>
-      <p>사용자는 앱의 AI 분석 기능 설정에서 이 기능을 언제든 켜거나 끌 수 있습니다. 식단 사진 등 다른 기능의 데이터가 해당 API에 전송되는지는 별도의 실제 구현 확인이 필요하며, 본 항목은 <strong>운동 기록의 GPT 수치 분석 기능</strong>을 설명합니다.</p>
-      <p>Google Play를 통한 앱 설치·결제 등 플랫폼 서비스 이용 시에도 해당 플랫폼 제공자가 서비스 운영에 필요한 정보를 별도로 처리할 수 있습니다.</p>
+      <h3>2. 친구 대결 (서버에 저장하는 정보)</h3>
+      <p>친구 탭에서 닉네임을 정한 이용자에 한해 다음 정보를 개발자 서버(Cloudflare Workers·D1)에 저장합니다.</p>
+      <ul>
+        <li>닉네임, 무작위로 만든 기기 ID와 6자리 친구 코드, 언어, 플랫폼(Android/iOS)</li>
+        <li>기기 인증 토큰의 해시값(원문은 저장하지 않음)</li>
+        <li>푸시 알림 토큰(알림을 허용한 경우)</li>
+        <li>친구 관계, 대결 신청한 운동 내용, 대결 결과(표시용 기록·점수·완주 여부·스케일)</li>
+        <li>가입 남용 방지를 위한 IP 주소의 해시값(2일 뒤 삭제)</li>
+      </ul>
+      <p>이 정보는 친구 추가, 대결 신청·수락·거절, 결과 비교와 그에 대한 알림에만 사용합니다. 닉네임과 대결 결과는 이용자가 친구로 추가한 상대에게만 보입니다.</p>
 
-      <h3>3. 기기 접근 권한</h3>
-      <p>사진 선택·촬영과 알림 등 앱의 해당 기능에 필요할 때만 관련 기기 권한을 요청할 수 있습니다. 권한 허용 여부는 Android 설정에서 관리할 수 있으며, 권한을 거부하면 해당 기능의 일부가 제한될 수 있습니다.</p>
+      <h3>3. 외부 서비스</h3>
+      <ul>
+        <li><strong>Google Firebase Cloud Messaging · Apple 푸시 알림 서비스:</strong> 친구 대결 알림을 보내기 위해 푸시 토큰과 알림 내용(닉네임, 대결 이름, 기록)이 전달됩니다.</li>
+        <li><strong>Google AdMob:</strong> 무료 버전에는 광고가 표시됩니다. 광고 제공을 위해 Google이 기기 식별자, 대략적 위치(IP 기반), 광고 상호작용 정보를 처리할 수 있습니다. 동의 화면과 iOS 앱 추적 허용(ATT) 선택에 따라 맞춤 광고 여부가 정해집니다. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google 광고 정책</a></li>
+        <li><strong>결제:</strong> PRO 결제는 Google Play 또는 App Store가 처리하며, 개발자는 결제 수단 정보를 받지 않습니다.</li>
+        <li><strong>백업(선택):</strong> Android는 이용자의 Google Drive 앱 전용 공간, iOS는 이용자의 iCloud(CloudKit 비공개 데이터베이스)에 기록을 백업합니다. 개발자는 이 백업을 볼 수 없습니다.</li>
+      </ul>
 
-      <h3>4. 외부 서비스 제공자</h3>
-      <p><strong>OpenAI:</strong> 사용자가 GPT 운동 분석을 활성화하고 분석을 실행할 때, OpenAI가 API 요청에 포함된 운동 수치 및 관련 입력 내용을 분석 결과 제공 목적으로 처리합니다. OpenAI의 공식 안내에 따르면 API 입력·출력 데이터는 기본적으로 모델 학습에 사용되지 않지만, 별도 데이터 공유 설정에 따라 달라질 수 있습니다. API 데이터 관리 안내는 <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI API 데이터 관리 정책</a>을 참고하시기 바랍니다.</p>
-      <p><strong>Google:</strong> 앱의 설치·업데이트 및 Google Play 구독·결제 기능(제공되는 경우)에는 Google 서비스가 사용될 수 있습니다. 결제 수단 정보는 Google Play 결제 환경에서 처리되며 개발자가 카드번호를 직접 수집하도록 설계되어 있지 않습니다. 자세한 내용은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a>을 참고하시기 바랍니다.</p>
+      <h3>4. 기기 접근 권한</h3>
+      <p>카메라·사진(운동표 사진, 오운완 사진), 알림(운동 알림·친구 대결 알림), 앱 추적 허용(iOS 광고) 권한은 해당 기능을 쓸 때만 요청합니다. 권한은 기기 설정에서 언제든 바꿀 수 있으며, 거부하면 해당 기능만 제한됩니다.</p>
 
-      <h3>5. 안전성 확보</h3>
-      <p>기기에 저장되는 정보에는 Android의 앱별 저장 공간과 운영체제 접근 제어를 사용합니다. 이용자는 운영체제의 기기 잠금 및 보안 업데이트를 통해 추가적인 보호 조치를 취할 수 있습니다. 외부 서비스가 사용되는 경우 해당 서비스의 보안 정책도 적용됩니다.</p>
+      <h3>5. 보관 기간 및 삭제 방법</h3>
+      <ul>
+        <li><strong>기기 안 정보:</strong> 앱에서 기록을 지우거나 앱 데이터를 삭제·앱을 삭제하면 지워집니다.</li>
+        <li><strong>친구 대결 정보:</strong> 친구 기능을 쓰는 동안 보관합니다. 앱의 <strong>친구 탭 → 친구 기능 탈퇴</strong>를 누르면 닉네임, 친구 관계, 대결 기록과 푸시 토큰이 서버에서 즉시 삭제됩니다. 앱을 쓸 수 없는 경우 아래 이메일로 요청하시면 삭제해 드립니다.</li>
+        <li><strong>광고·결제·백업:</strong> 각 서비스 제공자(Google, Apple)의 정책에 따릅니다.</li>
+      </ul>
 
-      <h3>6. 보관 기간 및 삭제 방법</h3>
-      <p>기기에 저장된 운동·식단 기록 및 설정은 이용자가 직접 삭제하거나 기기의 앱 데이터를 지울 때까지 보관될 수 있습니다. Android의 <strong>설정 → 앱 → WOD COACH → 저장공간 → 데이터 삭제</strong>를 통해 기기 내 앱 데이터를 삭제할 수 있습니다. 앱 삭제 시에도 일반적으로 앱의 기기 내 데이터가 삭제되지만, 운영체제 백업·복원 설정이나 외부 플랫폼의 기록은 별도로 관리될 수 있습니다.</p>
-      <p>GPT 운동 분석을 꺼도 이전에 전송된 분석 요청 정보가 즉시 삭제되는 것은 아닙니다. OpenAI는 일반적인 API 사용에 대해 남용 모니터링 기록을 기본적으로 최대 30일 보유할 수 있으며 법률·안전상의 예외 및 API 기능별 별도 보관 조건이 적용될 수 있습니다. 정확한 보유 조건은 <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI API 데이터 관리 안내</a>를 참고하세요. 관련 정보 처리 및 삭제 문의는 개발자에게 요청할 수 있습니다. Google Play 결제 기록 등 플랫폼이 관리하는 정보는 해당 플랫폼의 절차가 적용됩니다.</p>
+      <h3>6. 안전성 확보</h3>
+      <p>서버와의 통신은 HTTPS로 암호화하며, 기기 인증 토큰은 Android Keystore 또는 iOS 키체인에 저장하고 서버에는 해시값만 둡니다.</p>
 
-      <h3>7. 이용자의 선택과 권리</h3>
-      <p>이용자는 <strong>GPT 기반 운동 기록 수치 분석을 언제든 ON/OFF</strong>로 설정할 수 있습니다. OFF 상태에서는 해당 기능의 신규 외부 GPT 분석이 수행되지 않습니다. 이 설정과 별도로 이용자는 앱에서 기록과 설정을 관리하고, 기기 권한을 변경하거나 앱 데이터를 삭제할 수 있습니다. 개인정보 처리 또는 삭제 요청은 개발자에게 문의할 수 있습니다.</p>
+      <h3>7. 아동의 개인정보</h3>
+      <p>앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 아동의 정보가 저장된 사실을 알게 되면 삭제합니다.</p>
 
-      <h3>8. 아동의 개인정보</h3>
-      <p>앱의 운동·식단 기능은 보호자의 지도 없이 아동이 이용하도록 별도로 설계된 서비스가 아닙니다. 아동의 개인정보와 관련한 삭제 요청은 아래 문의처로 알려주시기 바랍니다.</p>
+      <h3>8. 방침 변경</h3>
+      <p>앱 기능이나 데이터 처리 방식이 바뀌면 이 페이지에 변경 내용과 시행일을 게시합니다.</p>
 
-      <h3>9. 방침 변경</h3>
-      <p>앱 기능이나 데이터 처리 방식이 변경되면 본 방침을 개정할 수 있으며, 변경된 내용과 시행일을 이 페이지에 게시합니다.</p>
-
-      <h3>10. 개인정보 문의처</h3>
+      <h3>9. 개인정보 문의처</h3>
       <p>개발자: <strong>LEEJUNWON</strong><br>앱: <strong>WOD COACH</strong><br>문의 이메일: <a href="mailto:huve31@gmail.com">huve31@gmail.com</a></p>
-      <p><strong>시행일: 2026년 10월 19일</strong></p>
+      <p><strong>시행일: 2026년 11월 20일</strong></p>
 
       <hr class="section-divider">
       <section class="english" id="en" lang="en">
         <h2>WOD COACH Privacy Policy (English)</h2>
-        <p><strong>LEEJUNWON</strong> (the “Developer”) respects the privacy of people who use <strong>WOD COACH</strong> (the “App”). This policy explains the information handled in connection with the App.</p>
-        <h3>1. Information and purposes</h3>
-        <p>Depending on the features a user chooses, the App may process training goals, preferences, available equipment and time, workout plans and performance records (including weights, repetitions, duration and running history), dietary entries, user-selected meal or verification images, notification settings, and related preferences. These are used to provide and personalize workouts, store progress, analyze activity, and operate user-requested features. The App is not a medical diagnostic service.</p>
-        <p>Platform providers such as Google Play may separately process device, installation, security, or transaction information when their services are used.</p>
-        <h3>2. Local storage and external AI analysis</h3>
-        <p>Workout and dietary records and user-selected images are generally managed in local App storage. <strong>WOD COACH offers optional GPT-powered numerical workout analysis using the OpenAI API.</strong> The user can enable or disable this feature. When enabled and analysis is requested, data necessary for the analysis may be sent to OpenAI.</p>
-        <p>Potential input categories for GPT workout analysis include the type of exercise, sets, repetitions, weights, workout duration, performance results and derived summaries. The exact fields sent depend on the released App's implementation. <strong>When GPT workout analysis is OFF, the App does not initiate new GPT analysis requests or transfer workout records for that feature.</strong> Turning it off does not affect local workout recording, viewing or the App's own numerical calculations and statistics. Turning it off does not retroactively remove previously submitted data. This section describes workout analysis only; other features, including any image-related processing, must be evaluated separately against the released implementation.</p>
-        <p>Platform providers including Google Play may separately process information required for their services, such as app installation or payments.</p>
-        <h3>3. Device permissions</h3>
-        <p>For relevant functions, the App may request permissions to select or capture images or deliver notifications. Permissions can be managed through Android settings. Denying permission may limit the related feature.</p>
-        <h3>4. External service providers</h3>
-        <p><strong>OpenAI:</strong> When the optional GPT workout analysis is enabled and used, OpenAI processes the workout-related data provided in the API request to return an analysis. According to OpenAI's documentation, API input/output data is not used to train its models by default unless the API customer opts in to share it. See <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI API data controls</a>.</p>
-        <p><strong>Google:</strong> Google services may be used for app distribution, updates, and subscriptions or payments where available. Payment credentials are handled through Google Play rather than collected directly by the Developer. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
-        <h3>5. Security</h3>
-        <p>Local information uses Android's app-specific storage and operating-system access controls. Device security settings and the security practices of any third-party platform services also apply.</p>
-        <h3>6. Retention and deletion</h3>
-        <p>Locally stored records and preferences may remain until deleted by the user or removed by clearing the App's data. On Android, go to <strong>Settings → Apps → WOD COACH → Storage → Clear data</strong> to erase local App data. Removing the App generally removes its local data; platform backups and third-party records may be managed separately. Disabling GPT analysis does not automatically delete requests already sent to OpenAI. OpenAI normally retains API abuse-monitoring logs for up to 30 days, subject to legal and safety exceptions and feature-specific retention. See <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">OpenAI API data controls</a>. Contact the Developer below with privacy or deletion requests.</p>
-        <h3>7. Your choices</h3>
-        <p>Users can <strong>switch GPT-powered numerical workout analysis ON or OFF</strong> in the App. When it is OFF, no new GPT analysis requests for that feature are sent. Users can also manage records and settings, change device permissions, and clear the App's data. Contact the Developer with privacy inquiries or data-deletion requests.</p>
-        <h3>8. Children</h3>
-        <p>The fitness and nutrition functions are not specifically designed for children to use without guidance from a parent or guardian. Please contact the Developer regarding a child's personal data or a related deletion request.</p>
-        <h3>9. Changes</h3>
-        <p>Changes to the App's features or information practices may require an update to this policy. The updated policy and effective date will be published here.</p>
-        <h3>10. Contact</h3>
+        <p><strong>LEEJUNWON</strong> (the “Developer”) respects the privacy of people who use <strong>WOD COACH</strong> (the “App”, Android and iOS).</p>
+        <div class="summary"><p>Workout records, profile and photos stay <strong>on your device</strong>. Our server stores only what friend challenges need, and only after you start them: a nickname, a random ID, a push token, friend links, challenge workouts and results. No email, phone number, location or health data is sent to our server. The external AI (OpenAI) feature was removed on 2026-11-13.</p></div>
+        <h3>1. Stored only on your device</h3>
+        <p>Generated workouts, workout records (scores, times, loads, effort, heart rate), level test results, training plans, profile and settings (including body weight, used only to estimate calories). Workout-sheet photos are read on the device (Google ML Kit on Android, Apple Vision on iOS) and never uploaded; photos taken in the App are saved to the “WOD Coach” album. Wear OS sync happens directly between your devices.</p>
+        <h3>2. Friend challenges (stored on our server)</h3>
+        <p>When you choose a nickname on the Friends tab, our server (Cloudflare Workers and D1) stores your nickname, a random device ID and 6-character friend code, language and platform, a hash of your device token (never the token itself), your push token if notifications are allowed, friend links, challenge workouts and results, and a hash of your IP address for abuse prevention (deleted after 2 days). This is used only to add friends, send, accept or decline challenges, compare results and notify you. Your nickname and results are visible only to people you added as friends.</p>
+        <h3>3. Third-party services</h3>
+        <p><strong>Firebase Cloud Messaging and Apple Push Notification service</strong> deliver friend notifications (push token and the notification text). <strong>Google AdMob</strong> shows ads in the free version and may process device identifiers, approximate location (from IP) and ad interactions; personalization follows your consent choice and, on iOS, your App Tracking Transparency choice. Payments are processed by Google Play or the App Store; we never receive payment details. Optional backups go to your own Google Drive app folder (Android) or iCloud private database (iOS), which we cannot access.</p>
+        <h3>4. Permissions</h3>
+        <p>Camera and photos, notifications and (iOS) tracking permission are requested only when the related feature is used and can be changed in device settings.</p>
+        <h3>5. Retention and deletion</h3>
+        <p>On-device data is removed when you delete it in the App or remove the App. Friend data is kept while you use friend challenges; <strong>Friends tab → Leave friend challenges</strong> deletes your nickname, friend links, challenges and push token from our server immediately. You can also email us to request deletion.</p>
+        <h3>6. Security</h3>
+        <p>Server traffic uses HTTPS. The device token is kept in Android Keystore or the iOS Keychain; the server stores only its hash.</p>
+        <h3>7. Children</h3>
+        <p>The App is not directed to children under 14. We delete such data when we learn of it.</p>
+        <h3>8. Changes</h3>
+        <p>Updates to this policy and its effective date will be posted on this page.</p>
+        <h3>9. Contact</h3>
         <p>Developer: <strong>LEEJUNWON</strong><br>App: <strong>WOD COACH</strong><br>Email: <a href="mailto:huve31@gmail.com">huve31@gmail.com</a></p>
-        <p><strong>Effective date: October 19, 2026.</strong></p>
+        <p><strong>Effective date: November 20, 2026.</strong></p>
       </section>
     </article>
   </main>
